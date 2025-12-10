@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Esplanada · Bar · Restaurante</title>
+  <style>
+    :root{--accent:#c0392b;--bg:#f8f7f5;--card:#ffffff;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#111}
+    .container{max-width:980px;margin:28px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{background:var(--card);padding:10px 14px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .menu-list{display:grid;gap:8px}
+    .item{padding:8px;border-radius:8px}
+    .price{float:right;color:var(--muted)}
+    .small{font-size:14px;color:var(--muted)}
+    .cta{display:flex;gap:8px;margin-top:10px}
+    .btn{background:var(--accent);color:#fff;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+    .section{margin-top:18px}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><strong>ESPLANADA</strong></div>
+      <div>
+        <h1>Esplanada · Bar · Restaurante</h1>
+        <p class="lead">Comida casera, tapas y bocadillos. Atención local y comida honesta.</p>
+        <p class="small">Dirección: Passeig de Colom, 12, 08002 Barcelona, España</p>
+      </div>
+    </header>
+
+    <div class="hero">
+      <main class="card">
+        <h2 style="margin-top:0">Menú destacado</h2>
+        <div class="menu-list">
+          <div class="item"><strong>Bocadillo de Jamón Serrano</strong> <span class="price">€6.50</span><div class="small">Jamón serrano de calidad en pan crujiente</div></div>
+          <div class="item"><strong>Bocadillo de Queso</strong> <span class="price">€5.00</span><div class="small">Queso fundido con pan recién horneado</div></div>
+          <div class="item"><strong>Patatas bravas</strong> <span class="price">€4.50</span><div class="small">Salsa casera y alioli suave</div></div>
+          <div class="item"><strong>Croquetas caseras</strong> <span class="price">€5.00</span><div class="small">Ración de 4 unidades</div></div>
+          <div class="item"><strong>Calamares a la romana</strong> <span class="price">€7.50</span><div class="small">Fritos al punto</div></div>
+        </div>
+
+        <div class="section">
+          <h3>Platos combinados</h3>
+          <div class="small">Huevos fritos con patatas · Pollo a la plancha con guarnición · Filete de ternera con patatas</div>
+        </div>
+
+        <div class="section">
+          <h3>Para terminar</h3>
+          <div class="small">Café · Vino de la casa · Cerveza · Refrescos</div>
+        </div>
+
+        <div class
